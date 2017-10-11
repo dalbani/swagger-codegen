@@ -2,7 +2,7 @@ FROM jimschubert/8-jdk-alpine-mvn:1.0
 
 ENV GEN_DIR /opt/swagger-codegen
 
-RUN set -x && \
+RUN set -x || \
     apk add --no-cache bash
 
 RUN mkdir /opt
